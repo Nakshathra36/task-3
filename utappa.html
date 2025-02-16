@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uttapam Recipe</title>
+    <style>
+       
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('uttapam-bg.jpg'); 
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            text-align: center;
+        }
+
+        .container {
+            background: rgba(0, 0, 0, 0.8);
+            width: 60%;
+            margin: 50px auto;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(8px);
+        }
+
+        h1 {
+            font-size: 40px;
+            color: #ff9100;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-shadow: 3px 3px 10px rgba(255, 145, 0, 0.8), 
+                         -3px -3px 10px rgba(255, 255, 255, 0.5);
+        }
+
+        .recipe-img {
+            width: 70%;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+            box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.3);
+        }
+
+        .recipe-img:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 8px 16px rgba(255, 255, 255, 0.5);
+        }
+
+        .ingredients, .instructions {
+            text-align: left;
+            margin: 20px;
+            font-size: 18px;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .ingredients:hover, .instructions:hover {
+            transform: translateY(-5px);
+        }
+
+        h2 {
+            font-size: 26px;
+            color: #ff9100;
+            text-shadow: 2px 2px 5px rgba(255, 145, 0, 0.8);
+            font-weight: bold;
+            position: relative;
+        }
+
+        h2::after {
+            content: "";
+            display: block;
+            width: 80px;
+            height: 3px;
+            background: #ff9100;
+            margin: 8px auto;
+            transition: width 0.3s ease-in-out;
+        }
+
+        h2:hover::after {
+            width: 120px;
+        }
+
+        ul, ol {
+            margin-left: 30px;
+            font-size: 18px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 16px;
+            opacity: 0.8;
+            padding: 10px;
+            border-top: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Uttapam Recipe</h1>
+        <img src="ut.jpg" height="600px" alt="Uttapam" class="recipe-img">
+
+        <div class="ingredients">
+            <h2>Ingredients:</h2>
+            <ul>
+                <li>2 cups dosa batter</li>
+                <li>1 small onion (finely chopped)</li>
+                <li>1 small tomato (finely chopped)</li>
+                <li>1 green chili (finely chopped)</li>
+                <li>2 tbsp coriander leaves (chopped)</li>
+                <li>1/4 tsp salt</li>
+                <li>1/2 tsp black pepper</li>
+                <li>1/4 tsp cumin seeds</li>
+                <li>1 tsp oil (for cooking)</li>
+            </ul>
+        </div>
+
+        <div class="instructions">
+            <h2>Instructions:</h2>
+            <ol>
+                <li>Heat a non-stick pan or tawa on medium heat.</li>
+                <li>Pour a ladle of dosa batter and spread lightly (thicker than a dosa).</li>
+                <li>Sprinkle chopped onions, tomatoes, green chilies, coriander, and cumin seeds on top.</li>
+                <li>Drizzle some oil around the edges.</li>
+                <li>Cook on medium heat until the base turns golden brown.</li>
+                <li>Flip carefully and cook for another 1-2 minutes.</li>
+                <li>Remove from heat and serve hot with chutney or sambar.</li>
+            </ol>
+        </div>
+
+        <div class="footer">
+            <p>Enjoy your delicious and healthy Uttapam! 🥞🍛</p>
+        </div>
+    </div>
+
+</body>
+</html>
